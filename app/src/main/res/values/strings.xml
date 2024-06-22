@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="favorite_cities">Favorite Cities</string>
+    <string name="remove">Remove</string>
+    <string name="add">Add</string>
+    <string name="cities">Cities</string>
+    <string name="_28">28°F</string>
+    <string name="mostly_cloudly">Mostly Cloudly</string>
+    <string name="zaragoza">Zaragoza</string>
+    <string name="favorite">Favorite</string>
+    <string name="h_28_l_13">H:28 L:13</string>
+    <string name="historical_data">Historical Data</string>
+    <string name="conditions">Conditions</string>
+    <string name="wind_speed">Wind Speed</string>
+</resources>
