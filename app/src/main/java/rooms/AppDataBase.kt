@@ -78,10 +78,7 @@ abstract class AppDatabase : RoomDatabase() {
             cityDao.insertAll(cities)
             Log.d("Db", cityDao.getAllCities().toString())
 
-            val favoriteCities = listOf(
-                FavoriteCity("Barcelona", 41.3851, 2.1734),
-                FavoriteCity("Madrid", 40.4168, -3.7038)
-            )
+            val favoriteCities = listOf<FavoriteCity>()
             favoriteCities.forEach { favoriteCity ->
                 val existingFavoriteCity =
                     favoriteCityDao.getFavoriteCityByName(favoriteCity.favCityName)
@@ -89,14 +86,11 @@ abstract class AppDatabase : RoomDatabase() {
                     favoriteCityDao.insert(favoriteCity)
                 }
             }
-            val historicalData = HistoricalData(
-                cityName = "Barcelona",
-                temperature = 25.0,
-                condition = "Sunny",
-                windSpeed = 0.0
-            )
-            historicalDataDao.insertHistoricalData(historicalData)
         }
 
     }
 }
+
+
+
+

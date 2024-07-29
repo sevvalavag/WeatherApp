@@ -20,3 +20,4 @@ interface CityDao {
     fun getCityByName(cityName: String): City?
 
 }
+
